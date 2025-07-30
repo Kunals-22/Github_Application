@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>github_flow</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"9a76a264-d2cb-4483-ac73-78e5411b909d":["requested_item"]},"attributes":{"default_search_field":"number"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Github_flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:29:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf2e4831838f6210108dc020feaad3c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Github_flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Github Application" source="x_1447766_github_a">f61c40fd83476210108dc020feaad31a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
+        <sys_update_name>sys_hub_flow_cf2e4831838f6210108dc020feaad3c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9^sys_idNOT INfe5e0cb1838f6210108dc020feaad359"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Github_flow">cf2e4831838f6210108dc020feaad3c9</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>fe5e0cb1838f6210108dc020feaad359</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe5e0cb1838f6210108dc020feaad359"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN8f2e4831838f6210108dc020feaad3cd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>cf2e4831838f6210108dc020feaad3c9</id>
+        <name>Github_flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:29:39</sys_created_on>
+        <sys_id>8f2e4831838f6210108dc020feaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:29:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8f2e4831838f6210108dc020feaad3cd"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN7a5e4431838f6210108dc020feaad334,fe5e4431838f6210108dc020feaad32b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Github_flow">cf2e4831838f6210108dc020feaad3c9</model>
+        <model_id>cf2e4831838f6210108dc020feaad3c9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_cf2e4831838f6210108dc020feaad3c9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>7a5e4431838f6210108dc020feaad334</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7a5e4431838f6210108dc020feaad334"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Github_flow">cf2e4831838f6210108dc020feaad3c9</model>
+        <model_id>cf2e4831838f6210108dc020feaad3c9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_cf2e4831838f6210108dc020feaad3c9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:26</sys_created_on>
+        <sys_id>fe5e4431838f6210108dc020feaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fe5e4431838f6210108dc020feaad32b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN725e0cb1838f6210108dc020feaad37a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Github_flow">cf2e4831838f6210108dc020feaad3c9</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>725e0cb1838f6210108dc020feaad37a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <ui_id>9a76a264-d2cb-4483-ac73-78e5411b909d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=725e0cb1838f6210108dc020feaad37a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>725e0cb1838f6210108dc020feaad37a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>3e5e0cb1838f6210108dc020feaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <value>039c516237b1300054b6a3549dbe5dfc</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=725e0cb1838f6210108dc020feaad37a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>725e0cb1838f6210108dc020feaad37a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>ba5e0cb1838f6210108dc020feaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>725e0cb1838f6210108dc020feaad37a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>f25e0cb1838f6210108dc020feaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=725e0cb1838f6210108dc020feaad37a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=725e0cb1838f6210108dc020feaad37a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN765e0cb1838f6210108dc020feaad356,b65e4431838f6210108dc020feaad332"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cf2e4831838f6210108dc020feaad3c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>765e0cb1838f6210108dc020feaad356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Github Application" source="x_1447766_github_a">f61c40fd83476210108dc020feaad31a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cf2e4831838f6210108dc020feaad3c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>b65e4431838f6210108dc020feaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Github Application" source="x_1447766_github_a">f61c40fd83476210108dc020feaad31a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 11:30:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cf2e4831838f6210108dc020feaad3c9"/>
+</record_update>
