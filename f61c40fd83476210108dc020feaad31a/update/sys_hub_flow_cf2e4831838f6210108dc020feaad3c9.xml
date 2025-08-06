@@ -16,10 +16,9 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>github_flow</internal_name>
-        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"9a76a264-d2cb-4483-ac73-78e5411b909d":["requested_item"],"dd249aba-a01f-4565-b9a2-af2b5a7ff965":["record"]},"attributes":{"default_search_field":"number"}}]</label_cache>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"9a76a264-d2cb-4483-ac73-78e5411b909d":["requested_item"],"dd249aba-a01f-4565-b9a2-af2b5a7ff965":["record"]},"attributes":{"default_search_field":"number"}},{"name":"dd249aba-a01f-4565-b9a2-af2b5a7ff965.approval_state","label":"2 - Ask For Approval➛Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"84de6ef5-bb3f-46c5-b791-a62e620856f1":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
-        <master_snapshot_digest/>
         <name>Github_flow</name>
         <natlang/>
         <outputs/>
@@ -38,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cf2e4831838f6210108dc020feaad3c9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Github_flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Github Application" source="x_1447766_github_a">f61c40fd83476210108dc020feaad31a</sys_package>
@@ -46,12 +45,31 @@
         <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
         <sys_update_name>sys_hub_flow_cf2e4831838f6210108dc020feaad3c9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-30 11:41:32</sys_updated_on>
+        <sys_updated_on>2025-08-06 11:52:32</sys_updated_on>
         <type>flow</type>
-        <version/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=cf2e4831838f6210108dc020feaad3c9"/>
     <sys_variable_value action="delete_multiple" query="document_key=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9^sys_idNOT INfe5e0cb1838f6210108dc020feaad359"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Github_flow">cf2e4831838f6210108dc020feaad3c9</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
+        <sys_id>fe5e0cb1838f6210108dc020feaad359</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 11:52:31</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe5e0cb1838f6210108dc020feaad359"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN8f2e4831838f6210108dc020feaad3cd"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -130,14 +148,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-30 11:30:27</sys_created_on>
         <sys_id>7a5e4431838f6210108dc020feaad334</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-30 11:41:32</sys_updated_on>
+        <sys_updated_on>2025-08-06 11:52:31</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -237,26 +255,6 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fe5e4431838f6210108dc020feaad32b"/>
     <sys_hub_flow_output action="delete_multiple" query="model=cf2e4831838f6210108dc020feaad3c9"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=cf2e4831838f6210108dc020feaad3c9"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9^sys_idNOT INfe5e0cb1838f6210108dc020feaad359"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
-        <comment/>
-        <display_text/>
-        <flow display_value="Github_flow">cf2e4831838f6210108dc020feaad3c9</flow>
-        <name>Service Catalog</name>
-        <remote_sys_id/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-30 11:30:27</sys_created_on>
-        <sys_id>fe5e0cb1838f6210108dc020feaad359</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-30 11:41:32</sys_updated_on>
-        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
-        <trigger_inputs/>
-        <trigger_outputs/>
-        <trigger_type>service_catalog</trigger_type>
-    </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=fe5e0cb1838f6210108dc020feaad359"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN55e05439c347221096ab1275e4013144,725e0cb1838f6210108dc020feaad37a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -275,10 +273,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-30 11:41:32</sys_created_on>
         <sys_id>55e05439c347221096ab1275e4013144</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-30 11:41:32</sys_updated_on>
+        <sys_updated_on>2025-08-06 11:52:31</sys_updated_on>
         <ui_id>dd249aba-a01f-4565-b9a2-af2b5a7ff965</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=55e05439c347221096ab1275e4013144"/>
@@ -444,10 +442,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-30 11:30:27</sys_created_on>
         <sys_id>725e0cb1838f6210108dc020feaad37a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-30 11:41:32</sys_updated_on>
+        <sys_updated_on>2025-08-06 11:52:31</sys_updated_on>
         <ui_id>9a76a264-d2cb-4483-ac73-78e5411b909d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=725e0cb1838f6210108dc020feaad37a"/>
@@ -492,8 +490,56 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=725e0cb1838f6210108dc020feaad37a"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=725e0cb1838f6210108dc020feaad37a"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN1a86d840839f6210108dc020feaad37e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1e86d840839f6210108dc020feaad37c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Github_flow">cf2e4831838f6210108dc020feaad3c9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 11:52:31</sys_created_on>
+        <sys_id>1a86d840839f6210108dc020feaad37e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Github Application">f61c40fd83476210108dc020feaad31a</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 11:52:31</sys_updated_on>
+        <ui_id>84de6ef5-bb3f-46c5-b791-a62e620856f1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1a86d840839f6210108dc020feaad37e"/>
+    <sys_element_mapping action="delete_multiple" query="id=1a86d840839f6210108dc020feaad37e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1a86d840839f6210108dc020feaad37e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 11:52:31</sys_created_on>
+        <sys_id>da86d840839f6210108dc020feaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 11:52:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{dd249aba-a01f-4565-b9a2-af2b5a7ff965.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1a86d840839f6210108dc020feaad37e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1a86d840839f6210108dc020feaad37e"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=cf2e4831838f6210108dc020feaad3c9"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=cf2e4831838f6210108dc020feaad3c9"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_cf2e4831838f6210108dc020feaad3c9^sys_idNOT IN765e0cb1838f6210108dc020feaad356,b65e4431838f6210108dc020feaad332"/>
